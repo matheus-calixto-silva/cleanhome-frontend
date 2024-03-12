@@ -1,30 +1,60 @@
-# React + TypeScript + Vite
+# CleanHome Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o frontend da aplicação CleanHome, construído com React e TypeScript.
 
-Currently, two official plugins are available:
+## 🚀 Como executar o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto é composto apenas pelo Front-end.
 
-## Expanding the ESLint configuration
+### Pré-requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Antes de executar o servidor, é necessário configurar o ambiente:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone este repositório em sua máquina local.
+2. Clone e siga os passos do repositório do Back-end da aplicação: [aqui](https://github.com/matheus-calixto-silva/cleanhome-backend/tree/main).
+3. Na pasta do projeto, execute o comando `npm install` ou `yarn install` para instalar as dependências.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### 🧭 Rodando a aplicação
+Após configurar o ambiente, você pode iniciar o servidor com o comando:
+
+```sh
+npm run dev
+```
+ou
+
+```sh
+yarn dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+#### **API**
+
+-   **[React](https://pt-br.legacy.reactjs.org/)**
+-   **[TypeScript](https://www.typescriptlang.org/)**
+
+#### **Utilitários**
+
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
+
+
+## 🦸 Autor
+
+<a href="https://www.linkedin.com/in/matheus-calixto-silva/">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/56086100?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Matheus Calixto</b></sub></a> <a href="https://www.linkedin.com/in/matheus-calixto-silva/" title="Linkedin"></a>
+ <br />
+
+[![Linkedin Badge](https://img.shields.io/badge/-Matheus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheus-calixto-silva/)](https://www.linkedin.com/in/matheus-calixto-silva/)
+[![Gmail Badge](https://img.shields.io/badge/-matheuscalixto8@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:matheuscalixto8@gmail.com)](mailto:matheuscalixto8@gmail.com)
+
+---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito com ❤️ por Matheus Calixto 👋🏽 [Entre em contato!](https://www.linkedin.com/in/matheus-calixto-silva/)
