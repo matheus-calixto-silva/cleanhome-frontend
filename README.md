@@ -37,8 +37,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 #### **Utilitários**
 
--   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
-
+-   Editor:  **[Visual Studio Code - 1.87.1](https://code.visualstudio.com/)**
 
 ## 🦸 Autor
 
