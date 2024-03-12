@@ -33,7 +33,7 @@ const App = () => {
             <AddOrderedClientsModal
               modalOpen={modalOpen}
               error={error}
-              onClose={closeModal} // Pass closeModal function from the hook
+              onClose={closeModal}
             />
             <Button
               variant="contained"
