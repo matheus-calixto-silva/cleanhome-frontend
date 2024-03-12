@@ -10,6 +10,7 @@ import {
 import axios from 'axios';
 import { Dispatch, SetStateAction, useState } from 'react';
 
+import useModal from '../../hooks/useModal';
 import clientsService from '../../services/clients';
 import { IClient, IClientFormValues } from '../../types';
 import AddClientModal from '../AddClientModal';
@@ -20,16 +21,10 @@ interface IProps {
 }
 
 const ClientList = ({ clients, setClients }: IProps) => {
-  const [modalOpen, setModalOpen] = useState<boolean>(false);
-  const [error, setError] = useState<string>();
   const [searchTerm, setSearchTerm] = useState<string>('');
 
-  const openModal = (): void => setModalOpen(true);
-
-  const closeModal = (): void => {
-    setModalOpen(false);
-    setError(undefined);
-  };
+  const { modalOpen, openModal, closeModal, error, setError, setModalOpen } =
+    useModal();
 
   const submitNewClient = async (values: IClientFormValues) => {
     try {

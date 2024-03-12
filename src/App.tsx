@@ -4,20 +4,14 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 import ClientList from './components/ClientList';
 import AddOrderedClientsModal from './components/ClientOrderVisitModal';
+import useModal from './hooks/useModal';
 import clientService from './services/clients';
 import { IClient } from './types';
 
 const App = () => {
   const [clients, setClients] = useState<IClient[]>([]);
-  const [modalOpen, setModalOpen] = useState<boolean>(false);
-  const [error, setError] = useState<string>();
 
-  const openModal = (): void => setModalOpen(true);
-
-  const closeModal = (): void => {
-    setModalOpen(false);
-    setError(undefined);
-  };
+  const { modalOpen, openModal, closeModal, error } = useModal();
 
   useEffect(() => {
     const fetchPatientList = async () => {
@@ -39,7 +33,7 @@ const App = () => {
             <AddOrderedClientsModal
               modalOpen={modalOpen}
               error={error}
-              onClose={closeModal}
+              onClose={closeModal} // Pass closeModal function from the hook
             />
             <Button
               variant="contained"
